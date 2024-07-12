@@ -69,41 +69,25 @@ const Desktop = (
     </Modal>
 
     <div class="flex flex-col gap-4 pt-5 container border-b border-gray-300">
-      <div class="grid grid-cols-3 place-items-center">
+      <div class="grid grid-cols-2 place-items-center">
         <div class="place-self-start">
           <a href="/" aria-label="Store logo">
             <Image
               src={logo.src}
               alt={logo.alt}
               width={logo.width || 100}
-              height={logo.height || 23}
+              height={logo.height || 100}
             />
           </a>
         </div>
 
-        <label
-          for={SEARCHBAR_POPUP_ID}
-          class="input input-bordered flex items-center gap-2 w-full"
-          aria-label="search icon button"
-        >
-          <Icon id="search" />
-          <span class="text-base-300 truncate">
-            Search products, brands...
-          </span>
-        </label>
-
-        <div class="flex gap-4 place-self-end">
-          <SignIn variant="desktop" />
-          <Bag />
-        </div>
-      </div>
-
-      <div class="flex justify-between items-center text-base-300">
-        <ul class="flex">
-          {navItems?.slice(0, 4).map((item) => <NavItem item={item} />)}
-        </ul>
-        <div>
-          {/* ship to */}
+        <div class="flex justify-between items-center text-base-300">
+          <ul class="flex">
+            {navItems?.slice(0, 4).map((item) => <NavItem item={item} />)}
+          </ul>
+          <div>
+            {/* ship to */}
+          </div>
         </div>
       </div>
     </div>

@@ -74,29 +74,6 @@ function BannerItem(
       aria-label={action?.label}
       class="relative block overflow-y-hidden w-full"
     >
-      {action && (
-        <div
-          class={clx(
-            "absolute h-full w-full top-0 left-0",
-            "flex flex-col justify-center items-center",
-            "px-5 sm:px-0",
-            "sm:left-40 sm:items-start sm:max-w-96",
-          )}
-        >
-          <span class="text-7xl font-bold text-base-100">
-            {action.title}
-          </span>
-          <span class="font-normal text-base text-base-100 pt-4 pb-12">
-            {action.subTitle}
-          </span>
-          <button
-            class="btn btn-primary btn-outline bg-base-100"
-            aria-label={action.label}
-          >
-            {action.label}
-          </button>
-        </div>
-      )}
       <Picture preload={lcp} {...viewPromotionEvent}>
         <Source
           media="(max-width: 767px)"
