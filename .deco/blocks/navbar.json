@@ -2,50 +2,31 @@
   "items": [
     {
       "@type": "SiteNavigationElement",
-      "url": "/deals",
-      "name": "Deals",
-      "children": [
-        {
-          "image": [],
-          "children": [],
-          "name": "Hello"
-        },
-        {
-          "image": [],
-          "children": [],
-          "name": "World"
-        }
-      ]
+      "url": "/sobre-nos",
+      "children": [],
+      "name": "Sobre Nós "
     },
     {
-      "@type": "SiteNavigationElement",
-      "url": "/valentines-day",
-      "name": "Valentine's Day",
-      "children": []
+      "children": [],
+      "image": [],
+      "name": "Cursos",
+      "url": "/cursos"
     },
     {
-      "@type": "SiteNavigationElement",
-      "url": "/women",
-      "name": "Women",
-      "children": []
+      "children": [],
+      "image": [],
+      "name": "Bolsas e Programas",
+      "url": "/bolsas-programas"
     },
     {
-      "@type": "SiteNavigationElement",
-      "url": "/men",
-      "name": "Men",
-      "children": []
+      "children": [],
+      "image": [],
+      "name": "Contato",
+      "url": "/contato"
     },
     {
-      "@type": "SiteNavigationElement",
-      "url": "/clearance",
-      "name": "Clearance",
-      "children": []
-    },
-    {
-      "@type": "SiteNavigationElement",
-      "url": "/activities",
-      "name": "Activities",
-      "children": []
+      "children": [],
+      "image": []
     }
   ],
   "__resolveType": "commerce/loaders/navbar.ts"
