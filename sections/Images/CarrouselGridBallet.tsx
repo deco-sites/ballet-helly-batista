@@ -1,1 +1,1 @@
-export { default } from '../../components/ui/CarrouselGridBallet.tsx'
+export { default } from "../../components/ui/CarrouselGridBallet.tsx";

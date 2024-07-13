@@ -3,7 +3,6 @@ import { useId } from "../sdk/useId.ts";
 import { MINICART_DRAWER_ID } from "../constants.ts";
 import Icon from "../components/ui/Icon.tsx";
 
-
 const onLoad = (id: string) =>
   window.STOREFRONT.CART.subscribe((sdk) => {
     const counter = document.getElementById(id);

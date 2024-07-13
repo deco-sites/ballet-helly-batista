@@ -101,8 +101,6 @@ function BannerItem(
     event: { name: "view_promotion", params },
   });
 
-
-
   return (
     <a
       {...selectPromotionEvent}
@@ -113,11 +111,21 @@ function BannerItem(
       {action?.title && (
         <div class="absolute  h-screen lg:h-auto sm:w-full max-w-[720px] flex flex-col items-center justify-center gap-3  right-0 lg:top-[20%] transform -translate-y-1/2 bg-base-100 bg-opacity-70 z-10  animate-fadeIn ">
           <div class=" w-[80%]  lg:w-[520px] flex flex-col items-center justify-center ">
-            <h1 class=" text-3xl lg:text-[46px] text-[#DDDCDC] text-center capitalize">{action.title}</h1>
-            {action.subTitle && <p class="uppercase text-3xl lg:text-[42px] text-black text-center">{action.subTitle}</p>}
-             <span class="w-[140px] h-[1px] mt-6 bg-black"></span>
+            <h1 class=" text-3xl lg:text-[46px] text-[#DDDCDC] text-center capitalize">
+              {action.title}
+            </h1>
+            {action.subTitle && (
+              <p class="uppercase text-3xl lg:text-[42px] text-black text-center">
+                {action.subTitle}
+              </p>
+            )}
+            <span class="w-[140px] h-[1px] mt-6 bg-black"></span>
           </div>
-          {action.description && <p class=" text-sm lg:text-base text-[#6c6c6c] pt-6 text-center leading-[24px]">{action.description}</p>}
+          {action.description && (
+            <p class=" text-sm lg:text-base text-[#6c6c6c] pt-6 text-center leading-[24px]">
+              {action.description}
+            </p>
+          )}
         </div>
       )}
 
@@ -151,7 +159,7 @@ function Carousel(
   { images = [], preload, interval, showArrow, layout, showDotz }: Props,
 ) {
   const id = useId();
-  const device = useDevice(); 
+  const device = useDevice();
   return (
     <div
       id={id}
@@ -219,7 +227,9 @@ function Carousel(
 
       <Slider.JS rootId={id} interval={interval && interval * 1e3} infinite />
 
-      {layout?.bannerGrid && device === 'desktop' && <BannerCard bannerGrid={layout?.bannerGrid} />}
+      {layout?.bannerGrid && device === "desktop" && (
+        <BannerCard bannerGrid={layout?.bannerGrid} />
+      )}
     </div>
   );
 }

@@ -143,7 +143,7 @@ const Mobile = ({ logo, searchbar }: Props) => (
           </a>
         )}
       </div>
-        
+
       <div class="flex justify-end items-center w-full">
         <label
           for={SIDEMENU_DRAWER_ID}
@@ -157,8 +157,6 @@ const Mobile = ({ logo, searchbar }: Props) => (
           <Icon id="hamburger" class="" />
         </label>
       </div>
-
-     
     </div>
   </>
 );
