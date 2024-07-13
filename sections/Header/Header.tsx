@@ -4,10 +4,9 @@ import Image from "apps/website/components/Image.tsx";
 import { useDevice } from "deco/hooks/useDevice.ts";
 import { useSection } from "deco/hooks/useSection.ts";
 import Alert from "../../components/header/Alert.tsx";
-import Bag from "../../components/header/Bag.tsx";
 import Menu from "../../components/header/Menu.tsx";
 import NavItem from "../../components/header/NavItem.tsx";
-import SignIn from "../../components/header/SignIn.tsx";
+
 import Searchbar, {
   type SearchbarProps,
 } from "../../components/search/Searchbar/Form.tsx";
@@ -61,16 +60,16 @@ const Desktop = (
   <>
     <Modal id={SEARCHBAR_POPUP_ID}>
       <div
-        class="absolute top-0 bg-base-100 container"
+        class="absolute top-0 bg-transparent container"
         style={{ marginTop: HEADER_HEIGHT_MOBILE }}
       >
         <Searchbar {...searchbar} />
       </div>
     </Modal>
 
-    <div class="flex flex-col gap-4 pt-5 container border-b border-gray-300">
-      <div class="grid grid-cols-2 place-items-center">
-        <div class="place-self-start">
+    <div class="flex flex-col gap-4 pt-5 container  px-4">
+      <div class="grid grid-cols-2 place-items-center pl-5">
+        <div class="place-self-start w-full items-center">
           <a href="/" aria-label="Store logo">
             <Image
               src={logo.src}
@@ -81,8 +80,8 @@ const Desktop = (
           </a>
         </div>
 
-        <div class="flex justify-between items-center text-base-300">
-          <ul class="flex">
+        <div class="flex justify-end items-center text-base-300 w-full pr-5">
+          <ul class="flex gap-14 items-center">
             {navItems?.slice(0, 4).map((item) => <NavItem item={item} />)}
           </ul>
           <div>
@@ -122,7 +121,7 @@ const Mobile = ({ logo, searchbar }: Props) => (
     />
 
     <div
-      class="grid place-items-center w-screen px-5 gap-4"
+      class="grid grid-cols-2 place-items-center w-screen px-5 gap-4"
       style={{
         height: NAVBAR_HEIGHT_MOBILE,
         gridTemplateColumns:
@@ -156,18 +155,6 @@ const Mobile = ({ logo, searchbar }: Props) => (
           />
         </a>
       )}
-
-      <label
-        for={SEARCHBAR_DRAWER_ID}
-        class="btn btn-square btn-sm btn-ghost"
-        aria-label="search icon button"
-      >
-        <Icon id="search" />
-      </label>
-
-      <SignIn variant="mobile" />
-
-      <Bag />
     </div>
   </>
 );
