@@ -11,15 +11,16 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
 
   return (
     <li
-      class="group flex items-center pr-5"
+      class="group flex items-center justify-center hover:border-primary border-transparent border-solid border-b-4 "
       style={{ height: NAVBAR_HEIGHT_DESKTOP }}
     >
       <a
         href={url}
-        class="group-hover:underline text-base/5 font-medium"
+        class="text-base/5 font-medium"
       >
         {name}
       </a>
+      <div class="group-hover:border-b"></div>
 
       {children && children.length > 0 &&
         (
