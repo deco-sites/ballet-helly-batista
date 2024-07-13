@@ -1,0 +1,34 @@
+{
+  "__resolveType": "site/sections/Images/CarrouselGridBallet.tsx",
+  "bannerGrid": {
+    "cards": [
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/117ff48d-8e77-4a29-815d-c341266b1c40",
+        "alt": "Kids Group",
+        "href": "/",
+        "title": "MIX GROUP",
+        "subTitle": "Modern Ballet"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/fd82e4d6-15b7-42fb-b9d6-b51de9aa1647",
+        "alt": "Mix Teen",
+        "href": "/",
+        "title": "Teen ",
+        "subTitle": "Moderno Ballet"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/0476dd23-cf25-4083-9578-c9b158b59cef",
+        "alt": "Mix Group",
+        "href": "/",
+        "title": "Teen ",
+        "subTitle": "Moderno Ballet"
+      }
+    ],
+    "layout": {
+      "numberOfSliders": {
+        "mobile": 1,
+        "desktop": 1
+      }
+    }
+  }
+}

@@ -8,11 +8,12 @@ import * as $$$$$$$$$$$0 from "./apps/deco/analytics.ts";
 import * as $$$$$$$$$$$1 from "./apps/deco/htmx.ts";
 import * as $$$$$$$$$$$2 from "./apps/deco/shopify.ts";
 import * as $$$$$$$$$$$3 from "./apps/site.ts";
-import * as $$$0 from "./loaders/availableIcons.ts";
-import * as $$$1 from "./loaders/icons.ts";
-import * as $$$2 from "./loaders/minicart.ts";
-import * as $$$3 from "./loaders/user.ts";
-import * as $$$4 from "./loaders/wishlist.ts";
+import * as $$$1 from "./loaders/availableIcons.ts";
+import * as $$$0 from "./loaders/Bag.tsx";
+import * as $$$2 from "./loaders/icons.ts";
+import * as $$$3 from "./loaders/minicart.ts";
+import * as $$$4 from "./loaders/user.ts";
+import * as $$$5 from "./loaders/wishlist.ts";
 import * as $$$$$$0 from "./sections/Animation/Animation.tsx";
 import * as $$$$$$1 from "./sections/Category/CategoryBanner.tsx";
 import * as $$$$$$2 from "./sections/Category/CategoryGrid.tsx";
@@ -25,30 +26,32 @@ import * as $$$$$$8 from "./sections/Footer/Footer.tsx";
 import * as $$$$$$9 from "./sections/Header/Header.tsx";
 import * as $$$$$$10 from "./sections/Images/Banner.tsx";
 import * as $$$$$$11 from "./sections/Images/Carousel.tsx";
-import * as $$$$$$12 from "./sections/Images/ImageGallery.tsx";
-import * as $$$$$$13 from "./sections/Images/ShoppableBanner.tsx";
-import * as $$$$$$14 from "./sections/Links/LinkTree.tsx";
-import * as $$$$$$15 from "./sections/Miscellaneous/CampaignTimer.tsx";
-import * as $$$$$$16 from "./sections/Miscellaneous/CookieConsent.tsx";
-import * as $$$$$$17 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$18 from "./sections/Product/ProductDetails.tsx";
-import * as $$$$$$19 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$20 from "./sections/Product/ProductShelfTabbed.tsx";
-import * as $$$$$$21 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$22 from "./sections/Product/ShelfWithImage.tsx";
-import * as $$$$$$23 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$24 from "./sections/Session.tsx";
-import * as $$$$$$25 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$26 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$27 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$12 from "./sections/Images/CarrouselGridBallet.tsx";
+import * as $$$$$$13 from "./sections/Images/ImageGallery.tsx";
+import * as $$$$$$14 from "./sections/Images/ShoppableBanner.tsx";
+import * as $$$$$$15 from "./sections/Links/LinkTree.tsx";
+import * as $$$$$$16 from "./sections/Miscellaneous/CampaignTimer.tsx";
+import * as $$$$$$17 from "./sections/Miscellaneous/CookieConsent.tsx";
+import * as $$$$$$18 from "./sections/Newsletter/Newsletter.tsx";
+import * as $$$$$$19 from "./sections/Product/ProductDetails.tsx";
+import * as $$$$$$20 from "./sections/Product/ProductShelf.tsx";
+import * as $$$$$$21 from "./sections/Product/ProductShelfTabbed.tsx";
+import * as $$$$$$22 from "./sections/Product/SearchResult.tsx";
+import * as $$$$$$23 from "./sections/Product/ShelfWithImage.tsx";
+import * as $$$$$$24 from "./sections/Product/Wishlist.tsx";
+import * as $$$$$$25 from "./sections/Session.tsx";
+import * as $$$$$$26 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$27 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$28 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
-    "site/loaders/availableIcons.ts": $$$0,
-    "site/loaders/icons.ts": $$$1,
-    "site/loaders/minicart.ts": $$$2,
-    "site/loaders/user.ts": $$$3,
-    "site/loaders/wishlist.ts": $$$4,
+    "site/loaders/availableIcons.ts": $$$1,
+    "site/loaders/Bag.tsx": $$$0,
+    "site/loaders/icons.ts": $$$2,
+    "site/loaders/minicart.ts": $$$3,
+    "site/loaders/user.ts": $$$4,
+    "site/loaders/wishlist.ts": $$$5,
   },
   "sections": {
     "site/sections/Animation/Animation.tsx": $$$$$$0,
@@ -63,22 +66,23 @@ const manifest = {
     "site/sections/Header/Header.tsx": $$$$$$9,
     "site/sections/Images/Banner.tsx": $$$$$$10,
     "site/sections/Images/Carousel.tsx": $$$$$$11,
-    "site/sections/Images/ImageGallery.tsx": $$$$$$12,
-    "site/sections/Images/ShoppableBanner.tsx": $$$$$$13,
-    "site/sections/Links/LinkTree.tsx": $$$$$$14,
-    "site/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$15,
-    "site/sections/Miscellaneous/CookieConsent.tsx": $$$$$$16,
-    "site/sections/Newsletter/Newsletter.tsx": $$$$$$17,
-    "site/sections/Product/ProductDetails.tsx": $$$$$$18,
-    "site/sections/Product/ProductShelf.tsx": $$$$$$19,
-    "site/sections/Product/ProductShelfTabbed.tsx": $$$$$$20,
-    "site/sections/Product/SearchResult.tsx": $$$$$$21,
-    "site/sections/Product/ShelfWithImage.tsx": $$$$$$22,
-    "site/sections/Product/Wishlist.tsx": $$$$$$23,
-    "site/sections/Session.tsx": $$$$$$24,
-    "site/sections/Social/InstagramPosts.tsx": $$$$$$25,
-    "site/sections/Social/WhatsApp.tsx": $$$$$$26,
-    "site/sections/Theme/Theme.tsx": $$$$$$27,
+    "site/sections/Images/CarrouselGridBallet.tsx": $$$$$$12,
+    "site/sections/Images/ImageGallery.tsx": $$$$$$13,
+    "site/sections/Images/ShoppableBanner.tsx": $$$$$$14,
+    "site/sections/Links/LinkTree.tsx": $$$$$$15,
+    "site/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$16,
+    "site/sections/Miscellaneous/CookieConsent.tsx": $$$$$$17,
+    "site/sections/Newsletter/Newsletter.tsx": $$$$$$18,
+    "site/sections/Product/ProductDetails.tsx": $$$$$$19,
+    "site/sections/Product/ProductShelf.tsx": $$$$$$20,
+    "site/sections/Product/ProductShelfTabbed.tsx": $$$$$$21,
+    "site/sections/Product/SearchResult.tsx": $$$$$$22,
+    "site/sections/Product/ShelfWithImage.tsx": $$$$$$23,
+    "site/sections/Product/Wishlist.tsx": $$$$$$24,
+    "site/sections/Session.tsx": $$$$$$25,
+    "site/sections/Social/InstagramPosts.tsx": $$$$$$26,
+    "site/sections/Social/WhatsApp.tsx": $$$$$$27,
+    "site/sections/Theme/Theme.tsx": $$$$$$28,
   },
   "actions": {
     "site/actions/minicart/submit.ts": $$$$$$$$$0,

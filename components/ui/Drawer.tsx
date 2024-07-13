@@ -85,11 +85,11 @@ function Aside(
       class="bg-base-100 grid grid-rows-[auto_1fr] h-full divide-y"
       style={{ maxWidth: "100vw" }}
     >
-      <div class="flex justify-between items-center">
+      <div class="flex justify-between items-center bg-primary">
         <h1 class="px-4 py-3">
-          <span class="font-medium text-2xl">{title}</span>
+          <span class="font-medium text-2xl text-white">{title}</span>
         </h1>
-        <label for={drawer} aria-label="X" class="btn btn-ghost">
+        <label for={drawer} aria-label="X" class="btn btn-ghost !text-white ">
           <Icon id="close" />
         </label>
       </div>

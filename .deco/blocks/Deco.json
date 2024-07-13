@@ -37,6 +37,29 @@
           }
         ],
         "family": "Poppins"
+      },
+      {
+        "variations": [
+          {
+            "weight": "100"
+          },
+          {
+            "weight": "200"
+          },
+          {
+            "weight": "400"
+          },
+          {
+            "weight": "500"
+          },
+          {
+            "weight": "600"
+          },
+          {
+            "weight": "700"
+          }
+        ],
+        "family": "Inter"
       }
     ]
   },
