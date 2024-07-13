@@ -1,0 +1,59 @@
+{
+  "__resolveType": "site/sections/Images/Carousel.tsx",
+  "images": [
+    {
+      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/88872b45-e2f3-49dc-bc64-f3843ad4041d",
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/ba6d4928-fcdf-4c54-818a-187702aa6720",
+      "alt": "Woman",
+      "action": {
+        "subTitle": " dance trough life",
+        "href": "#",
+        "label": "Shop Now!",
+        "title": "ballerina story",
+        "description": "Lorem ipsum dolor sit amet, vix an illum vidisse eloquentiam. Pro ei omnis vivendo lucilius. Ei duo ornatus corrumpit, his aperiri admodum fierent te. Nam id accusamus argumentum dissentias, eam paulo noster neglegentur ea, in cum debet ceteros mentitum. Ut wisi alienum moderatius nam, dicant recusabo pro an, vix cu patrioque splendide."
+      }
+    }
+  ],
+  "preload": true,
+  "showArrow": false,
+  "layout": {
+    "bannerGrid": {
+      "cards": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/4f3b5542-fe46-4c60-831a-bbd75e79bd88",
+          "alt": "ballet baby",
+          "href": "/",
+          "title": "Kids group",
+          "subTitle": "Modern ballet"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/fd82e4d6-15b7-42fb-b9d6-b51de9aa1647",
+          "alt": "Teen Group",
+          "href": "/",
+          "title": "Teen",
+          "subTitle": "Modern Ballet "
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/ff6836fd-472f-4f02-9102-3ff6729e48c5",
+          "alt": "MIX GROUP",
+          "href": "/",
+          "title": "MIX GROUP",
+          "subTitle": "modern Ballet "
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/faf3ba2e-12ce-4bc5-8845-e8fcb2d300f6",
+          "alt": "banner",
+          "href": "/",
+          "title": "Mix Group",
+          "subTitle": "lorem "
+        }
+      ],
+      "layout": {
+        "numberOfSliders": {
+          "mobile": 1,
+          "desktop": 3
+        }
+      }
+    }
+  }
+}

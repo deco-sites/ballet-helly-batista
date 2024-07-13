@@ -121,40 +121,42 @@ const Mobile = ({ logo, searchbar }: Props) => (
     />
 
     <div
-      class="grid grid-cols-2 place-items-center w-screen px-5 gap-4"
+      class="grid grid-cols-2  w-screen px-4 "
       style={{
         height: NAVBAR_HEIGHT_MOBILE,
-        gridTemplateColumns:
-          "min-content auto min-content min-content min-content",
       }}
     >
-      <label
-        for={SIDEMENU_DRAWER_ID}
-        class="btn btn-square btn-sm btn-ghost"
-        aria-label="open menu"
-        hx-target={`#${SIDEMENU_CONTAINER_ID}`}
-        hx-swap="outerHTML"
-        hx-trigger="click once"
-        hx-get={useSection({ props: { variant: "menu" } })}
-      >
-        <Icon id="menu" />
-      </label>
+      <div class="flex justify-start items-center w-full">
+        {logo && (
+          <a
+            href="/"
+            class="flex-grow inline-flex items-center justify-start"
+            style={{ minHeight: NAVBAR_HEIGHT_MOBILE }}
+            aria-label="Store logo"
+          >
+            <Image
+              src={logo.src}
+              alt={logo.alt}
+              width={logo.width || 100}
+              height={logo.height || 13}
+            />
+          </a>
+        )}
+      </div>
 
-      {logo && (
-        <a
-          href="/"
-          class="flex-grow inline-flex items-center justify-center"
-          style={{ minHeight: NAVBAR_HEIGHT_MOBILE }}
-          aria-label="Store logo"
+      <div class="flex justify-end items-center w-full">
+        <label
+          for={SIDEMENU_DRAWER_ID}
+          class="btn btn-square btn-sm btn-ghost flex "
+          aria-label="open menu"
+          hx-target={`#${SIDEMENU_CONTAINER_ID}`}
+          hx-swap="outerHTML"
+          hx-trigger="click once"
+          hx-get={useSection({ props: { variant: "menu" } })}
         >
-          <Image
-            src={logo.src}
-            alt={logo.alt}
-            width={logo.width || 100}
-            height={logo.height || 13}
-          />
-        </a>
-      )}
+          <Icon id="hamburger" class="" />
+        </label>
+      </div>
     </div>
   </>
 );

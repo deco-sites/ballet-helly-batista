@@ -1,4 +1,3 @@
-import Slider from "../../components/ui/Slider.tsx";
 import { useId } from "../../sdk/useId.ts";
 
 export interface Props {
@@ -7,26 +6,26 @@ export interface Props {
    * @title Autoplay interval
    * @description time (in seconds) to start the carousel autoplay
    */
-  interval?: number;
 }
 
-function Alert({ alerts = [], interval = 5 }: Props) {
+function Alert({ alerts = [] }: Props) {
   const id = useId();
 
   return (
     <div id={id}>
-      <Slider class="carousel carousel-center w-screen gap-6 bg-secondary text-secondary-content text-sm/4">
+      <ul class="flex items-center py-6 justify-center  w-screen bg-primary text-white text-xs lg:text-sm/4">
         {alerts.map((alert, index) => (
-          <Slider.Item index={index} class="carousel-item">
+          <li
+            key={index}
+            class={`text-white lg:h-4 w-1/${alerts.length} px-5 first:border-r-2 first:border-r-white `}
+          >
             <span
-              class="px-5 py-4 w-screen text-center"
+              class=" text-center"
               dangerouslySetInnerHTML={{ __html: alert }}
             />
-          </Slider.Item>
+          </li>
         ))}
-      </Slider>
-
-      <Slider.JS rootId={id} interval={interval && interval * 1e3} />
+      </ul>
     </div>
   );
 }

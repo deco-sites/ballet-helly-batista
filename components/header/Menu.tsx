@@ -7,14 +7,11 @@ export interface Props {
 
 function MenuItem({ item }: { item: SiteNavigationElement }) {
   return (
-    <div class="collapse collapse-plus">
+    <div class="collapse collapse-arrow">
       <input type="checkbox" />
       <div class="collapse-title">{item.name}</div>
       <div class="collapse-content">
         <ul>
-          <li>
-            <a class="underline text-sm" href={item.url}>Ver todos</a>
-          </li>
           {item.children?.map((node) => (
             <li>
               <MenuItem item={node} />
@@ -32,7 +29,7 @@ function Menu({ navItems }: Props) {
       class="flex flex-col h-full overflow-y-auto"
       style={{ minWidth: "100vw" }}
     >
-      <ul class="px-4 flex-grow flex flex-col divide-y divide-base-200 overflow-y-auto">
+      <ul class="px-4 flex-grow flex flex-col divide-y divide-base-200 overflow-y-auto ">
         {navItems.map((item) => (
           <li>
             <MenuItem item={item} />
@@ -44,19 +41,10 @@ function Menu({ navItems }: Props) {
         <li>
           <a
             class="flex items-center gap-4 px-4 py-2"
-            href="/wishlist"
-          >
-            <Icon id="favorite" />
-            <span class="text-sm">Lista de desejos</span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
             href="https://www.deco.cx"
           >
             <Icon id="home_pin" />
-            <span class="text-sm">Nossas lojas</span>
+            <span class="text-sm">Nossa Escola</span>
           </a>
         </li>
         <li>
@@ -66,15 +54,6 @@ function Menu({ navItems }: Props) {
           >
             <Icon id="call" />
             <span class="text-sm">Fale conosco</span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="https://www.deco.cx"
-          >
-            <Icon id="account_circle" />
-            <span class="text-sm">Minha conta</span>
           </a>
         </li>
       </ul>

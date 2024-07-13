@@ -184,5 +184,13 @@
   "/.deco/blocks/Ballet%20Theme.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Theme/Theme.tsx"
+  },
+  "/.deco/blocks/Banner%20Hero.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Images/Carousel.tsx"
+  },
+  "/.deco/blocks/Carrousel%20Grid%20Mobile.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Images/CarrouselGridBallet.tsx"
   }
 }
