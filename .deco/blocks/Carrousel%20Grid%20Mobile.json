@@ -27,8 +27,10 @@
     "layout": {
       "numberOfSliders": {
         "mobile": 1,
-        "desktop": 1
-      }
+        "desktop": 3
+      },
+      "showArrows": true
     }
-  }
+  },
+  "lcp": true
 }

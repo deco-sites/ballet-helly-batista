@@ -63,7 +63,6 @@ export default function BannerCard(
     5: "w-1/5",
   };
 
-  const device = useDevice();
   const onload = () => {
     document.addEventListener("DOMContentLoaded", function () {
       const observer = new IntersectionObserver((entries) => {
@@ -82,107 +81,103 @@ export default function BannerCard(
     });
   };
 
-  if (device === "mobile") {
-    return (
-      <div class="triggerSection w-full m-auto mt-8 flex flex-col gap-6 lg:my-8 px-3 font-soleil lg:px-4 animate-fadeInLeft">
-        <div class="w-full">
-          <div
-            id={id}
-            class={clx(
-              "grid relative h-48 lg:h-auto",
-              "grid-cols-[48px_1fr_48px] sm:grid-cols-[70px_1fr_70px]  grid-rows-[1fr_48px_1fr]",
-              "px-0 w-full",
-            )}
-          >
-            <Slider class="carousel sm:carousel-end row-span-full">
-              {cards?.map((card, index) => (
-                <Slider.Item
-                  index={index}
-                  class={clx(
-                    "carousel-item px-1",
-                    slideDesktop[
-                      layout?.numberOfSliders?.desktop ?? 3
-                    ],
-                    slideMobile[
-                      layout?.numberOfSliders?.mobile ?? 1
-                    ],
-                  )}
+  return (
+    <div class="triggerSection w-full m-auto mt-8 flex flex-col gap-6 lg:my-8 px-3 font-soleil lg:px-4 animate-fadeInLeft">
+      <div class="w-full">
+        <div
+          id={id}
+          class={clx(
+            "grid relative  lg:h-auto",
+            "grid-cols-[48px_1fr_48px] sm:grid-cols-[70px_1fr_70px]  grid-rows-[1fr_48px_1fr]",
+            "px-0 w-full",
+          )}
+        >
+          <Slider class="carousel sm:carousel-end row-span-full">
+            {cards?.map((card, index) => (
+              <Slider.Item
+                index={index}
+                class={clx(
+                  "carousel-item px-1",
+                  slideDesktop[
+                    layout?.numberOfSliders?.desktop ?? 3
+                  ],
+                  slideMobile[
+                    layout?.numberOfSliders?.mobile ?? 1
+                  ],
+                )}
+              >
+                <a
+                  href={card.href ?? "#"}
+                  aria-label={card.alt}
+                  class=" block overflow-y-hidden w-full max-w-[413px]  "
                 >
-                  <a
-                    href={card.href ?? "#"}
-                    aria-label={card.alt}
-                    class=" block overflow-y-hidden w-full max-w-[413px]  "
+                  <Picture
+                    preload={lcp}
+                    class="flex items-center relative justify-center overflow-hidden "
                   >
-                    <Picture
-                      preload={lcp}
-                      class="flex items-center relative justify-center overflow-hidden rounded-[40px_15px_15px_15px] "
-                    >
-                      <Source
-                        media="(max-width: 767px)"
-                        fetchPriority={lcp ? "high" : "auto"}
-                        src={card.image}
-                        width={412}
-                        height={660}
-                      />
-                      <Source
-                        media="(min-width: 768px)"
-                        fetchPriority={lcp ? "high" : "auto"}
-                        src={card.image}
-                        width={413}
-                        height={275}
-                      />
-                      <img
-                        class="object-cover w-full h-full max-w-[413px] max-h-[275px] hover:scale-125 transition-all duration-700"
-                        loading={lcp ? "eager" : "lazy"}
-                        src={card.image}
-                        alt={card.alt}
-                      />
+                    <Source
+                      media="(max-width: 767px)"
+                      fetchPriority={lcp ? "high" : "auto"}
+                      src={card.image}
+                      width={412}
+                      height={660}
+                    />
+                    <Source
+                      media="(min-width: 768px)"
+                      fetchPriority={lcp ? "high" : "auto"}
+                      src={card.image}
+                      width={413}
+                      height={275}
+                    />
+                    <img
+                      class="w-full h-full max-w-[413px] max-h-[275px] hover:scale-125 transition-all duration-700 object-contain"
+                      loading={lcp ? "eager" : "lazy"}
+                      src={card.image}
+                      alt={card.alt}
+                    />
 
-                      <div class="absolute left-0 bottom-4 flex flex-col justify-center gap-1 bg-white w-48 h-[75px]">
-                        <div class="pl-4">
-                          <h2 class="text-base font-bold text-black">
-                            {card.title}
-                          </h2>
+                    <div class="absolute left-0 bottom-4 flex flex-col justify-center gap-1 bg-white w-48 h-[75px]">
+                      <div class="pl-4">
+                        <h2 class="text-base font-bold text-black">
+                          {card.title}
+                        </h2>
 
-                          <p class="text-base">
-                            {card.subTitle}
-                          </p>
-                        </div>
+                        <p class="text-base">
+                          {card.subTitle}
+                        </p>
                       </div>
-                    </Picture>
-                  </a>
-                </Slider.Item>
-              ))}
-            </Slider>
+                    </div>
+                  </Picture>
+                </a>
+              </Slider.Item>
+            ))}
+          </Slider>
 
-            <div class="col-start-1 col-span-1 row-start-2 row-span-1 z-10 self-center">
-              <Slider.PrevButton class="sm:flex disabled:invisible btn !bg-primary shadow-xl !border-primary !text-white btn-sm btn-circle no-animation">
-                <Icon
-                  id="chevron-right"
-                  class="rotate-180"
-                  size={24}
-                />
-              </Slider.PrevButton>
-            </div>
-
-            <div class="col-start-3 col-span-1 row-start-2 row-span-1 z-10 self-center">
-              <Slider.NextButton class=" sm:flex disabled:invisible btn  shadow-xl !bg-primary !border-primary !text-white btn-sm btn-circle no-animation">
-                <Icon id="chevron-right" size={24} />
-              </Slider.NextButton>
-            </div>
+          <div class="col-start-1 col-span-1 row-start-2 row-span-1 z-10 self-center">
+            <Slider.PrevButton class="sm:flex disabled:invisible btn !bg-primary shadow-xl !border-primary !text-white btn-sm btn-circle no-animation">
+              <Icon
+                id="chevron-right"
+                class="rotate-180"
+                size={24}
+              />
+            </Slider.PrevButton>
           </div>
-          <Slider.JS rootId={id} />
+
+          <div class="col-start-3 col-span-1 row-start-2 row-span-1 z-10 self-center">
+            <Slider.NextButton class=" sm:flex disabled:invisible btn  shadow-xl !bg-primary !border-primary !text-white btn-sm btn-circle no-animation">
+              <Icon id="chevron-right" size={24} />
+            </Slider.NextButton>
+          </div>
         </div>
-
-        <script
-          type="module"
-          dangerouslySetInnerHTML={{
-            __html: useScript(onload),
-          }}
-        />
+        <Slider.JS rootId={id} />
       </div>
-    );
-  }
 
-  return null;
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{
+          __html: useScript(onload),
+        }}
+      />
+    </div>
+  );
 }

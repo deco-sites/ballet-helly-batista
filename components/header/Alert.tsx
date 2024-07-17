@@ -13,11 +13,11 @@ function Alert({ alerts = [] }: Props) {
 
   return (
     <div id={id}>
-      <ul class="flex items-center py-6 justify-center  w-screen bg-primary text-white text-xs lg:text-sm/4">
+      <ul class="flex items-center py-6 justify-center  w-screen bg-primary text-neutral text-xs lg:text-sm/4">
         {alerts.map((alert, index) => (
           <li
             key={index}
-            class={`text-white lg:h-4 w-1/${alerts.length} px-5 first:border-r-2 first:border-r-white `}
+            class={`text-neutral font-medium lg:h-4 w-1/${alerts.length} px-5 first:border-r-2 first:border-r-neutral `}
           >
             <span
               class=" text-center"

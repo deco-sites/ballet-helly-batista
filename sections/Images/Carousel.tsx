@@ -109,7 +109,7 @@ function BannerItem(
       class="relative block overflow-y-hidden w-full lg:w"
     >
       {action?.title && (
-        <div class="absolute  h-screen lg:h-auto sm:w-full max-w-[720px] flex flex-col items-center justify-center gap-3  right-0 lg:top-[20%] transform -translate-y-1/2 bg-base-100 bg-opacity-70 z-10  animate-fadeIn ">
+        <div class="absolute  h-screen lg:h-auto sm:w-full max-w-[720px] flex flex-col items-center justify-center gap-3  right-0 lg:top-[20%] transform -translate-y-1/2 bg-base-100 bg-opacity-70 z-10  animate-fadeIn lg:right-[10%] ">
           <div class=" w-[80%]  lg:w-[520px] flex flex-col items-center justify-center ">
             <h1 class=" text-3xl lg:text-[46px] text-[#DDDCDC] text-center capitalize">
               {action.title}
@@ -145,7 +145,7 @@ function BannerItem(
           height={600}
         />
         <img
-          class="object-cover w-full lg:h-[859px]"
+          class=" object-contain w-full"
           loading={lcp ? "eager" : "lazy"}
           src={desktop}
           alt={alt}
@@ -185,7 +185,7 @@ function Carousel(
         <>
           <div class="hidden sm:flex items-center justify-center z-10 col-start-1 row-start-2">
             <Slider.PrevButton
-              class="btn btn-neutral btn-outline btn-circle no-animation btn-sm"
+              class="btn btn-neutral !bg-primary  !text-white btn-outline !border-primary btn-circle no-animation btn-sm"
               disabled={false}
             >
               <Icon id="chevron-right" class="rotate-180" />
@@ -194,7 +194,7 @@ function Carousel(
 
           <div class="hidden sm:flex items-center justify-center z-10 col-start-3 row-start-2">
             <Slider.NextButton
-              class="btn btn-neutral btn-outline btn-circle no-animation btn-sm"
+              class="btn btn-neutral btn-outline btn-circle no-animation btn-sm !bg-primary !border-primary  !text-white"
               disabled={false}
             >
               <Icon id="chevron-right" />
@@ -215,8 +215,8 @@ function Carousel(
               <Slider.Dot
                 index={index}
                 class={clx(
-                  "bg-black opacity-20 h-3 w-3 no-animation rounded-full",
-                  "disabled:w-8 disabled:bg-base-100 disabled:opacity-100 transition-[width]",
+                  "bg-primary  h-3 w-3 no-animation rounded-full",
+                  "disabled:w-8 disabled:bg-primary disabled:opacity-50 transition-[width]",
                 )}
               >
               </Slider.Dot>
