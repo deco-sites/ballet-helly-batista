@@ -11,12 +11,12 @@
     }
   },
   "alerts": [
-    "<p>WhatsApp (86) 9999-9999</p>",
+    "<p><span class=\"bm_details_overlay\" data-detailsoverlay=\"{&quot;centerLatitude&quot;:-5.064125061035156,&quot;centerLongitude&quot;:-42.80063247680664,&quot;zoom&quot;:16,&quot;localDetailsState&quot;:{&quot;entityType&quot;:&quot;Business&quot;,&quot;launchOverflowTaskOnTaskActivate&quot;:false,&quot;query&quot;:&quot;Ballet Helly Batista&quot;,&quot;id&quot;:&quot;ypid:YN7993x7761950380198349679&quot;,&quot;disableComputingMapViewForLoadingOnly&quot;:true,&quot;formCode&quot;:&quot;MPSRPL&quot;,&quot;mapsEntryPointState&quot;:{&quot;answerService&quot;:&quot;EntityDataGroupAnswer&quot;,&quot;answerScenario&quot;:&quot;Local_LocalSingle_cdb:datagroupid.snapshotbullseye&quot;,&quot;segment&quot;:&quot;&quot;,&quot;region&quot;:&quot;Unknown&quot;,&quot;entryPoint&quot;:&quot;Details_Link&quot;}}}\" data-mapsovlprocessed=\"1\" data-mce-tabindex=\"0\"><a href=\"https://www.bing.com/ck/a?!&amp;&amp;p=12a0759c7c16c1b5JmltdHM9MTcyMTA4ODAwMCZpZ3VpZD0yYzI0Yzc1ZS1mNjc1LTY1MzUtMTA4MS1kM2ZjZjdhYzY0ZDkmaW5zaWQ9NTY5NQ&amp;ptn=3&amp;ver=2&amp;hsh=3&amp;fclid=2c24c75e-f675-6535-1081-d3fcf7ac64d9&amp;u=a1L21hcHM_Jm1lcGk9MTI3fn5Vbmtub3dufkFkZHJlc3NfTGluayZ0eT0xOCZxPUJhbGxldCUyMEhlbGx5JTIwQmF0aXN0YSZzcz15cGlkLllONzk5M3g3NzYxOTUwMzgwMTk4MzQ5Njc5JnBwb2lzPS01LjA2NDEyNTA2MTAzNTE1Nl8tNDIuODAwNjMyNDc2ODA2NjRfQmFsbGV0JTIwSGVsbHklMjBCYXRpc3RhX1lONzk5M3g3NzYxOTUwMzgwMTk4MzQ5Njc5fiZjcD0tNS4wNjQxMjV-LTQyLjgwMDYzMiZ2PTImc1Y9MSZGT1JNPU1QU1JQTA&amp;ntb=1\" target=\"_blank\" rel=\"noopener\" data-h=\"ID=SERP,5695.1\" data-mce-href=\"https://www.bing.com/ck/a?!&amp;&amp;p=12a0759c7c16c1b5JmltdHM9MTcyMTA4ODAwMCZpZ3VpZD0yYzI0Yzc1ZS1mNjc1LTY1MzUtMTA4MS1kM2ZjZjdhYzY0ZDkmaW5zaWQ9NTY5NQ&amp;ptn=3&amp;ver=2&amp;hsh=3&amp;fclid=2c24c75e-f675-6535-1081-d3fcf7ac64d9&amp;u=a1L21hcHM_Jm1lcGk9MTI3fn5Vbmtub3dufkFkZHJlc3NfTGluayZ0eT0xOCZxPUJhbGxldCUyMEhlbGx5JTIwQmF0aXN0YSZzcz15cGlkLllONzk5M3g3NzYxOTUwMzgwMTk4MzQ5Njc5JnBwb2lzPS01LjA2NDEyNTA2MTAzNTE1Nl8tNDIuODAwNjMyNDc2ODA2NjRfQmFsbGV0JTIwSGVsbHklMjBCYXRpc3RhX1lONzk5M3g3NzYxOTUwMzgwMTk4MzQ5Njc5fiZjcD0tNS4wNjQxMjV-LTQyLjgwMDYzMiZ2PTImc1Y9MSZGT1JNPU1QU1JQTA&amp;ntb=1\" data-mce-selected=\"inline-boundary\">Rua Marcos Parente 2683 (Bairro de Fátima), Teresina, PI, 64049-310﻿</a></span></p>",
     "<p>Email: HellyBatista@Helly.com.br</p>"
   ],
   "variant": "initial",
   "logo": {
-    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/7cbd35d1-1eca-460b-ac31-3ff96895b570",
+    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/5be751b8-1717-4841-ab92-bb3a669937f8",
     "alt": "Deco Storefront",
     "width": 50,
     "height": 50

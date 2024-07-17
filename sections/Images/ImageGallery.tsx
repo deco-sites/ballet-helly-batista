@@ -3,6 +3,7 @@ import { Picture, Source } from "apps/website/components/Picture.tsx";
 import Section, {
   type Props as SectionHeaderProps,
 } from "../../components/ui/Section.tsx";
+import { useScript } from "deco/hooks/useScript.ts";
 
 /**
  * @titleBy alt
@@ -44,7 +45,7 @@ function Banner({ mobile, desktop, alt, href }: Banner) {
         />
         <img
           width={640}
-          class="w-full h-full object-cover"
+          class="w-full h-full object-contain hover:scale-150 transition-all duration-700"
           src={mobile}
           alt={alt}
           decoding="async"
@@ -93,17 +94,41 @@ export default function Gallery({
     },
   ],
 }: Props) {
+  const onload = () => {
+    document.addEventListener("DOMContentLoaded", function () {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-fadeInUp");
+            observer.unobserve(entry.target); // Para de observar após a animação ser aplicada
+          }
+        });
+      });
+
+      const target = document.querySelector(".imageGallery");
+      if (target) {
+        observer.observe(target);
+      }
+    });
+  };
+
   return (
-    <Section.Container>
+    <Section.Container class="imageGallery">
       <Section.Header title={title} cta={cta} />
 
       <ul class="grid gap-2 sm:gap-4 grid-cols-1 sm:grid-cols-2 px-5 sm:px-0">
         {banners.map((item) => (
-          <li>
+          <li class="overflow-hidden">
             <Banner {...item} />
           </li>
         ))}
       </ul>
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{
+          __html: useScript(onload),
+        }}
+      />
     </Section.Container>
   );
 }

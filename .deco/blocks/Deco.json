@@ -80,7 +80,7 @@
     "warning": "#a39e0f",
     "error": "#d10a0a",
     "info": "#FADADD",
-    "neutral": "#000000"
+    "neutral": "#1C1C1C"
   },
   "complementaryColors": {
     "primary-content": "#ffffff",
