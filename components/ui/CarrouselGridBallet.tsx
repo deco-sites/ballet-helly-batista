@@ -5,7 +5,6 @@ import { Picture, Source } from "apps/website/components/Picture.tsx";
 import Slider from "./Slider.tsx";
 import Icon from "./Icon.tsx";
 import { useScript } from "deco/hooks/useScript.ts";
-import { useDevice } from "deco/hooks/useDevice.ts";
 
 /**
  * @title title
