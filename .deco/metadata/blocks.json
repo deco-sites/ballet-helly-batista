@@ -200,5 +200,17 @@
   "/.deco/blocks/Deferred.json": {
     "blockType": "sections",
     "__resolveType": "website/sections/Rendering/Deferred.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FNewSection.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/NewSection.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FCalendarSection.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/CalendarSection.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FCalender.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Calender.tsx"
   }
 }
