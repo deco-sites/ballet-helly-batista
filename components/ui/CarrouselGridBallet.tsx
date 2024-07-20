@@ -81,7 +81,7 @@ export default function BannerCard(
   };
 
   return (
-    <div class="triggerSection w-full m-auto mt-8 flex flex-col gap-6 lg:my-8 px-3 font-soleil lg:px-4 animate-fadeInLeft">
+    <div class="triggerSection container w-full m-auto mt-8 flex flex-col gap-6 lg:my-8 px-3 font-soleil lg:px-4 animate-fadeInLeft">
       <div class="w-full">
         <div
           id={id}

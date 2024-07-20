@@ -109,7 +109,7 @@ function BannerItem(
       class="relative block overflow-y-hidden w-full lg:w"
     >
       {action?.title && (
-        <div class="absolute  h-screen lg:h-auto sm:w-full max-w-[720px] flex flex-col items-center justify-center gap-3  right-0 lg:top-[20%] transform -translate-y-1/2 bg-base-100 bg-opacity-70 z-10  animate-fadeIn lg:right-[10%] ">
+        <div class="absolute  h-screen lg:h-auto w-full max-w-[720px] flex flex-col items-center justify-center gap-3  right-0 lg:top-[20%] transform -translate-y-1/2 bg-base-100 bg-opacity-70 z-10  animate-fadeIn lg:right-[10%] ">
           <div class=" w-[80%]  lg:w-[520px] flex flex-col items-center justify-center ">
             <h1 class=" text-3xl lg:text-[46px] text-[#DDDCDC] text-center capitalize">
               {action.title}
@@ -164,7 +164,7 @@ function Carousel(
     <div
       id={id}
       class={clx(
-        "grid lg:mb-[150px]",
+        "grid lg:mb-32",
         "grid-rows-[1fr_32px_1fr_64px]",
         "grid-cols-[32px_1fr_32px] min-h-[660px]",
         "sm:grid-cols-[112px_1fr_112px] sm:min-h-min",

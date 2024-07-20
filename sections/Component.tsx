@@ -1,9 +1,10 @@
 // deno-lint-ignore-file no-explicit-any
 import { useSection } from "deco/hooks/useSection.ts";
-import type { SectionProps } from "deco/mod.ts";
+
 import { Component, type ComponentType } from "preact";
 import { toFileUrl } from "std/path/mod.ts";
 import type { AppContext } from "../apps/site.ts";
+import { SectionProps } from "deco/blocks/section.ts";
 
 interface Props {
   component: string;

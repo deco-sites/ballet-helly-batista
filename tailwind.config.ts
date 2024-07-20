@@ -31,6 +31,9 @@ export default {
           "100%": { transform: "translateX(0)" },
         },
       },
+      boxShadow: {
+        "header": "0 4px 16px rgba(0, 0, 0, .12);",
+      },
     },
   },
 };

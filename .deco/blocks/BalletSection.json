@@ -1,0 +1,11 @@
+{
+  "__resolveType": "site/sections/BalletSection.tsx",
+  "description": "<p style=\"text-align: justify\"><span>Lorem ipsum dolor sit amet, consectetur adipis cinelit, sed do<br>eiusmod tempor incididunt labore et dolore ali.</span></p><p></p><p style=\"text-align: justify\">Lorem ipsum dolor sit amet, consectetur adipis cingelit, sed do eiusmod tempor<br>incidi. dunt u labore et dolore magna aliqua. Ut enim ad minim. veniam, quis<br>nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>Lorem ipsum dolor sit amet consectetur adipis. </p>",
+  "imagePosition": "right",
+  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/63fc9951-58d1-4bd7-bcdb-9985baee63c2",
+  "title": "<p>dance with us</p>",
+  "subTitle": "<p>ballet is my dream</p>",
+  "colorTitle": "#DDDCDC",
+  "colorSubTitle": "#000000",
+  "colorDescription": "#000000"
+}
