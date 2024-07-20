@@ -2,24 +2,24 @@
   "__resolveType": "site/sections/Images/ImageGallery.tsx",
   "banners": [
     {
-      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/87b8bc35-3d9d-413f-b7f9-674cbf6a6dad",
-      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/4d37f7cc-194a-4e1d-809c-a77b72c9ffa1",
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/28febb41-c91f-4de5-a918-9542fa35cbd2",
+      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/28febb41-c91f-4de5-a918-9542fa35cbd2",
       "alt": "Ballet",
       "href": "/"
     },
     {
-      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/a73f84be-8621-4866-83eb-49baf3ec6e46",
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/65ccd004-0a39-429d-a00f-b76cb0e453f0",
       "alt": "ballet ",
       "href": "/"
     },
     {
-      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/9ff4ced8-4a93-4284-a845-118fce84df5a",
-      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/3fc093b8-1183-4b92-864d-006212e6e9bb",
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/63fc9951-58d1-4bd7-bcdb-9985baee63c2",
+      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/63fc9951-58d1-4bd7-bcdb-9985baee63c2",
       "alt": "Ballet 02",
       "href": "/"
     },
     {
-      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/3fc41dc5-4d8a-4826-90e8-8b2d2456c98e",
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/cac7d7af-0331-46ff-be30-3ca2d76f5890",
       "alt": "Ballet 3",
       "href": "/"
     }
