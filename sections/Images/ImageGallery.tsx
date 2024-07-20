@@ -45,7 +45,7 @@ function Banner({ mobile, desktop, alt, href }: Banner) {
         />
         <img
           width={640}
-          class="w-full h-full object-contain hover:scale-150 transition-all duration-700"
+          class="w-full h-full object-cover hover:scale-150 transition-all duration-700"
           src={mobile}
           alt={alt}
           decoding="async"
@@ -113,7 +113,7 @@ export default function Gallery({
   };
 
   return (
-    <Section.Container class="imageGallery">
+    <Section.Container class="imageGallery w-full max-w-[1440px] m-auto">
       <Section.Header title={title} cta={cta} />
 
       <ul class="grid gap-2 sm:gap-4 grid-cols-1 sm:grid-cols-2 px-5 sm:px-0">

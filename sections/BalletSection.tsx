@@ -37,7 +37,7 @@ export default function BalletDreamSection({
 }: Props) {
   return (
     <div
-      class={`container flex flex-col-reverse justify-center items-center mb-32 gap-8 ${
+      class={`w-full max-w-[1440px] m-auto flex flex-col-reverse justify-center items-center mb-32 gap-8 ${
         imagePosition === "left" ? "md:flex-row" : "md:flex-row-reverse"
       } items-center justify-center space-y-8 md:space-y-0 md:space-x-12 p-8`}
     >
@@ -60,16 +60,21 @@ export default function BalletDreamSection({
         <span
           class="uppercase text-center lg:text-start text-black text-3xl lg:text-5xl pb-6"
           dangerouslySetInnerHTML={{ __html: subTitle }}
-          style={{color:colorSubTitle}}
+          style={{ color: colorSubTitle }}
         />
         <div class="w-36 h-[1px] bg-black mb-4"></div>
         <span
           class="text-xs text-center  leading-5 lg:leading-6 "
           dangerouslySetInnerHTML={{ __html: description }}
-          style={{color: colorDescription}}
+          style={{ color: colorDescription }}
         />
 
-        <a href="http://" class=" text-black  hover:brightness-90 uppercase text-xs font-medium mt-10 underline">Leia Mais</a>
+        <a
+          href="http://"
+          class=" text-black  hover:brightness-90 uppercase text-xs font-medium mt-10 underline"
+        >
+          Leia Mais
+        </a>
       </div>
     </div>
   );

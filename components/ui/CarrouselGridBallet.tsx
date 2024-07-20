@@ -81,13 +81,13 @@ export default function BannerCard(
   };
 
   return (
-    <div class="triggerSection w-full m-auto mt-8 flex flex-col gap-6 lg:my-8 px-3 font-soleil lg:px-4 animate-fadeInLeft">
+    <div class="triggerSection w-full max-w-[1440px] m-auto mb-20 lg:mb-28 flex flex-col gap-6 lg:my-8 font-soleil lg:px-4 overflow-hidden animate-fadeInLeft">
       <div class="w-full">
         <div
           id={id}
           class={clx(
             "grid relative  lg:h-auto",
-            "grid-cols-[48px_1fr_48px] sm:grid-cols-[70px_1fr_70px]  grid-rows-[1fr_48px_1fr]",
+            "grid-cols-[24px_1fr_24px] grid-rows-[1fr_48px_1fr]",
             "px-0 w-full",
           )}
         >
@@ -129,7 +129,7 @@ export default function BannerCard(
                       height={275}
                     />
                     <img
-                      class="w-full h-full max-w-[413px] max-h-[275px] hover:scale-125 transition-all duration-700 object-contain"
+                      class="w-full h-full max-w-[413px] max-h-[275px] hover:scale-125 transition-all duration-700 object-cover"
                       loading={lcp ? "eager" : "lazy"}
                       src={card.image}
                       alt={card.alt}
@@ -152,8 +152,8 @@ export default function BannerCard(
             ))}
           </Slider>
 
-          <div class="col-start-1 col-span-1 row-start-2 row-span-1 z-10 self-center">
-            <Slider.PrevButton class="sm:flex disabled:invisible btn !bg-primary shadow-xl !border-primary !text-white btn-sm btn-circle no-animation">
+          <div class="col-start-1 col-span-1 row-start-2 row-span-1 z-10 self-center relative">
+            <Slider.PrevButton class="sm:flex disabled:invisible btn !bg-primary absolute  left-2 shadow-xl !border-primary !text-white btn-sm btn-circle no-animation">
               <Icon
                 id="chevron-right"
                 class="rotate-180"
@@ -162,8 +162,8 @@ export default function BannerCard(
             </Slider.PrevButton>
           </div>
 
-          <div class="col-start-3 col-span-1 row-start-2 row-span-1 z-10 self-center">
-            <Slider.NextButton class=" sm:flex disabled:invisible btn  shadow-xl !bg-primary !border-primary !text-white btn-sm btn-circle no-animation">
+          <div class="col-start-3 col-span-1 row-start-2 row-span-1 z-10 self-center relative ">
+            <Slider.NextButton class=" sm:flex disabled:invisible btn absolute right-1  shadow-xl !bg-primary !border-primary !text-white btn-sm btn-circle no-animation">
               <Icon id="chevron-right" size={24} />
             </Slider.NextButton>
           </div>

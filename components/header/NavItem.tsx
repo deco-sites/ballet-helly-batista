@@ -16,7 +16,9 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
     >
       <a
         href={url}
-        class="text-base/5 font-medium uppercase tracking-wide"
+        class={`text-sm font-semibold uppercase tracking-wide ${
+          name === "Contato" && ("text-primary !font-bold")
+        }`}
       >
         {name}
       </a>

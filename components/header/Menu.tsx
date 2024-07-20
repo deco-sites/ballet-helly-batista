@@ -7,18 +7,8 @@ export interface Props {
 
 function MenuItem({ item }: { item: SiteNavigationElement }) {
   return (
-    <div class="collapse collapse-arrow">
-      <input type="checkbox" />
-      <div class="collapse-title">{item.name}</div>
-      <div class="collapse-content">
-        <ul>
-          {item.children?.map((node) => (
-            <li>
-              <MenuItem item={node} />
-            </li>
-          ))}
-        </ul>
-      </div>
+    <div class="flex">
+      <div class="py-2 text-sm uppercase tracking-wider">{item.name}</div>
     </div>
   );
 }

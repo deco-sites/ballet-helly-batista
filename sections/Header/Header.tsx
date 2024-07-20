@@ -1,4 +1,4 @@
-import type { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
+import type {ImageWidget } from "apps/admin/widgets.ts";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import { useDevice } from "deco/hooks/useDevice.ts";
@@ -11,7 +11,7 @@ import Searchbar, {
   type SearchbarProps,
 } from "../../components/search/Searchbar/Form.tsx";
 import Drawer from "../../components/ui/Drawer.tsx";
-import Icon from "../../components/ui/Icon.tsx";
+import Icon, { AvailableIcons } from "../../components/ui/Icon.tsx";
 import Modal from "../../components/ui/Modal.tsx";
 import {
   HEADER_HEIGHT_DESKTOP,
@@ -22,6 +22,7 @@ import {
   SIDEMENU_CONTAINER_ID,
   SIDEMENU_DRAWER_ID,
 } from "../../constants.ts";
+import { useScript } from "deco/hooks/useScript.ts";
 
 export interface Logo {
   src: ImageWidget;
@@ -30,8 +31,13 @@ export interface Logo {
   height?: number;
 }
 
+export interface alert {
+  alert: string;
+  icon?: AvailableIcons;
+}
+
 export interface SectionProps {
-  alerts?: HTMLWidget[];
+  alerts?: alert[];
 
   /**
    * @title Navigation items
@@ -52,6 +58,26 @@ export interface SectionProps {
   variant?: "initial" | "menu";
 }
 
+function onLoad() {
+  const alertElement = document.querySelector(".page-alert") as HTMLElement;
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      if (alertElement) {
+        alertElement.style.display = "none";
+      }
+    } else {
+      if (alertElement) {
+        alertElement.style.display = "block";
+      }
+    }
+  };
+  globalThis.addEventListener("scroll", handleScroll);
+
+  globalThis.addEventListener("beforeunload", () => {
+    globalThis.removeEventListener("scroll", handleScroll);
+  });
+}
+
 type Props = Omit<SectionProps, "alert" | "variant">;
 
 const Desktop = (
@@ -67,7 +93,7 @@ const Desktop = (
       </div>
     </Modal>
 
-    <div class="flex flex-col gap-4 py-4 container  px-4 ">
+    <div class="flex flex-col gap-4 py-4 w-full 3xl:max-w-7xl  m-auto px-4 ">
       <div class="grid grid-cols-2 place-items-center pl-5">
         <div class="place-self-start w-full items-center">
           <a href="/" aria-label="Store logo">
@@ -121,7 +147,7 @@ const Mobile = ({ logo, searchbar }: Props) => (
     />
 
     <div
-      class="grid grid-cols-2  w-screen px-4 "
+      class="grid grid-cols-2  w-screen px-4 scroll-smooth "
       style={{
         height: NAVBAR_HEIGHT_MOBILE,
       }}
@@ -189,6 +215,10 @@ function Header({
           ? <Desktop logo={logo} {...props} />
           : <Mobile logo={logo} {...props} />}
       </div>
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{ __html: useScript(onLoad) }}
+      />
     </header>
   );
 }
