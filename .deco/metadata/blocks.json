@@ -212,5 +212,17 @@
   "/.deco/blocks/Preview%20%2Fsections%2FCalender.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Calender.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FTextWithBanner.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/TextWithBanner.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FBalletSection.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/BalletSection.tsx"
+  },
+  "/.deco/blocks/BalletSection.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/BalletSection.tsx"
   }
 }

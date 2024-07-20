@@ -67,7 +67,7 @@ const Desktop = (
       </div>
     </Modal>
 
-    <div class="flex flex-col gap-4 pt-5 container  px-4">
+    <div class="flex flex-col gap-4 py-4 container  px-4 ">
       <div class="grid grid-cols-2 place-items-center pl-5">
         <div class="place-self-start w-full items-center">
           <a href="/" aria-label="Store logo">
@@ -181,8 +181,9 @@ function Header({
           ? HEADER_HEIGHT_DESKTOP
           : HEADER_HEIGHT_MOBILE,
       }}
+      class="shadow-header"
     >
-      <div class="bg-base-100 fixed w-full z-40">
+      <div class="bg-base-100 fixed w-full z-40 shadow-header">
         {alerts.length > 0 && <Alert alerts={alerts} />}
         {device === "desktop"
           ? <Desktop logo={logo} {...props} />

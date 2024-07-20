@@ -8,7 +8,22 @@
       "__resolveType": "Banner Hero"
     },
     {
-      "__resolveType": "Deferred"
+      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "section": {
+        "__resolveType": "BalletSection"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "section": {
+        "__resolveType": "Carrousel Grid Mobile"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "section": {
+        "__resolveType": "Imagem Gallery Home"
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
