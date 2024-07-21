@@ -28,6 +28,12 @@
     {
       "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
       "section": {
+        "__resolveType": "site/sections/GoogleMaps.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/SingleDeferred.tsx",
+      "section": {
         "__resolveType": "FooterBallet"
       }
     }
