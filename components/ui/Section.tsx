@@ -23,7 +23,7 @@ function Header({ title, cta }: Props) {
         "px-5 sm:px-0",
       )}
     >
-      <span class="text-2xl sm:text-3xl font-semibold">{title}</span>
+      <span class="mb-4 uppercase text-center lg:text-start text-black text-3xl lg:text-5xl pb-6">{title}</span>
       {cta && (
         <a class="text-sm font-medium text-primary" href={cta}>
           See all

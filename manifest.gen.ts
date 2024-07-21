@@ -25,8 +25,8 @@ import * as $$$$$$7 from "./sections/Content/Faq.tsx";
 import * as $$$$$$8 from "./sections/Content/Hero.tsx";
 import * as $$$$$$9 from "./sections/Content/Intro.tsx";
 import * as $$$$$$10 from "./sections/Content/Logos.tsx";
-import * as $$$$$$11 from "./sections/Footer/Footer.tsx";
-import * as $$$$$$12 from "./sections/FooterBallet.tsx";
+import * as $$$$$$12 from "./sections/Footer/Footer.tsx";
+import * as $$$$$$11 from "./sections/FooterBallet.tsx";
 import * as $$$$$$13 from "./sections/GoogleMaps.tsx";
 import * as $$$$$$14 from "./sections/Header/Header.tsx";
 import * as $$$$$$15 from "./sections/Images/Banner.tsx";
@@ -71,8 +71,8 @@ const manifest = {
     "site/sections/Content/Hero.tsx": $$$$$$8,
     "site/sections/Content/Intro.tsx": $$$$$$9,
     "site/sections/Content/Logos.tsx": $$$$$$10,
-    "site/sections/Footer/Footer.tsx": $$$$$$11,
-    "site/sections/FooterBallet.tsx": $$$$$$12,
+    "site/sections/Footer/Footer.tsx": $$$$$$12,
+    "site/sections/FooterBallet.tsx": $$$$$$11,
     "site/sections/GoogleMaps.tsx": $$$$$$13,
     "site/sections/Header/Header.tsx": $$$$$$14,
     "site/sections/Images/Banner.tsx": $$$$$$15,
