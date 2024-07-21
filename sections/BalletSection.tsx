@@ -70,7 +70,7 @@ export default function BalletDreamSection({
         />
 
         <a
-          href="http://"
+          href="/"
           class=" text-black  hover:brightness-90 uppercase text-xs font-medium mt-10 underline"
         >
           Leia Mais
