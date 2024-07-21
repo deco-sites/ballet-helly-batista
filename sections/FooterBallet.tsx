@@ -1,5 +1,9 @@
+import type { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
 
-import type { HTMLWidget } from "apps/admin/widgets.ts";
+export interface Image {
+  src: ImageWidget;
+}
 
 interface FooterProps {
   /**
@@ -20,15 +24,17 @@ interface FooterProps {
    */
   hours?: string;
   /**
-   * @widget ImageWidget
+   * @widget images
    * @description The Instagram feed images
    */
-  instagramImages?: HTMLWidget;
+  instagramImages?: Image[];
   /**
    * @format rich-text
    * @description The latest news titles
    */
   news?: HTMLWidget;
+
+  logo?: ImageWidget;
 }
 
 export default function Footer({
@@ -36,28 +42,51 @@ export default function Footer({
   address = "186 North Collins Street, Chicago",
   phone = "(847)704-4427",
   hours = "Mon - Sat 8:00 - 19:00",
-  instagramImages = '<div class="grid grid-cols-3 gap-2"><img src="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e" class="w-full" /><img src="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e" class="w-full" /><img src="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e" class="w-full" /><img src="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e" class="w-full" /><img src="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e" class="w-full" /><img src="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e" class="w-full" /></div>',
-  news = '<div class="space-y-2"><p>Charming body language</p><p>Today may be just like</p><p>Rhythm, mind & footstep</p></div>',
+  instagramImages,
+  logo, 
+  news =
+    '<div class="space-y-2"><p>Charming body language</p><p>Today may be just like</p><p>Rhythm, mind & footstep</p></div>',
 }: FooterProps) {
   return (
-    <footer class="bg-black text-white py-8">
-      <div class="container mx-auto px-4">
+    <footer class="bg-primary text-neutral flex flex-col mt-20 lg:mt-0">
+      <div class="container mx-auto py-8  px-4">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
+          <div class="flex flex-col">
             <h3 class="text-lg font-bold mb-4">{title}</h3>
-            <p>{address}</p>
-            <p>{phone}</p>
-            <p>{hours}</p>
+            <span type="module" dangerouslySetInnerHTML={{ __html: address }} />
+            <span type="module" dangerouslySetInnerHTML={{ __html: phone }} />
+            <span type="module" dangerouslySetInnerHTML={{ __html: hours }} />
           </div>
           <div>
             <h3 class="text-lg font-bold mb-4">INSTAGRAM</h3>
-            <div dangerouslySetInnerHTML={{ __html: instagramImages }} />
+            <div class="grid grid-cols-3 max-w-80">
+              {instagramImages && instagramImages.map((image, key) => (
+                <Image
+                  key={key}
+                  alt={`ballet-instagram-${key}`}
+                  src={image.src}
+                  width={100}
+                  height={100}
+                  class="object-cover w-full"
+                />
+              ))}
+            </div>
           </div>
           <div>
             <h3 class="text-lg font-bold mb-4">LATEST NEWS</h3>
             <div dangerouslySetInnerHTML={{ __html: news }} />
           </div>
         </div>
+      </div>
+      <div class="border-t border-base-200 flex items-center gap-1 justify-center text-xs">
+        <span>
+          © 2024 Ballet Helly Batista
+        </span>
+        <span>
+          {logo && (
+            <Image width={50} height={50} src={logo} alt="logo ballet Helly Batista" class=" object-contain" />
+          )}
+        </span>
       </div>
     </footer>
   );

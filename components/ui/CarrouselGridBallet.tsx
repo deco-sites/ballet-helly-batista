@@ -163,7 +163,7 @@ export default function BannerCard(
           </div>
 
           <div class="col-start-3 col-span-1 row-start-2 row-span-1 z-10 self-center relative ">
-            <Slider.NextButton class=" sm:flex disabled:invisible btn absolute right-1  shadow-xl !bg-primary !border-primary !text-white btn-sm btn-circle no-animation">
+            <Slider.NextButton class=" sm:flex disabled:invisible btn w-8 h-8 absolute right-1  shadow-xl !bg-primary !border-primary !text-white btn-sm btn-circle no-animation">
               <Icon id="chevron-right" size={24} />
             </Slider.NextButton>
           </div>

@@ -228,5 +228,9 @@
   "/.deco/blocks/Preview%20%2Fsections%2FFooterBallet.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/FooterBallet.tsx"
+  },
+  "/.deco/blocks/FooterBallet.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/FooterBallet.tsx"
   }
 }

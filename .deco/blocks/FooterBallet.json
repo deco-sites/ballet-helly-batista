@@ -1,0 +1,25 @@
+{
+  "__resolveType": "site/sections/FooterBallet.tsx",
+  "instagramImages": [
+    {
+      "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/dd8d256d-ea61-4d02-a67f-0ae5ce2be0ef",
+      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/dd8d256d-ea61-4d02-a67f-0ae5ce2be0ef"
+    },
+    {
+      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/63fc9951-58d1-4bd7-bcdb-9985baee63c2"
+    },
+    {
+      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/ff3c150c-05e0-44f0-bfe8-7bf812ed2631"
+    },
+    {
+      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/4e4c6ff6-2ba4-4eeb-ae67-b4d52834af1b"
+    },
+    {
+      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/4ab773cf-35d1-4647-ae4f-e4c0c55159e4"
+    },
+    {
+      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/5e9df766-6a0a-474d-8336-7278a78c58fc"
+    }
+  ],
+  "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11597/7cbd35d1-1eca-460b-ac31-3ff96895b570"
+}
